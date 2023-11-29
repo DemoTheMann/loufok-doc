@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Documentation Loufok',
-  tagline: "Site de documentaion pour les classes modèles de l'application Loufok",
+  title: 'Loufok',
+  tagline: "Découvrez une variante de cadavre exquis pour la création d'histoires courtes.",
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -30,8 +30,8 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'fr',
+    locales: ['fr'],
   },
 
   presets: [
@@ -41,17 +41,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -101,6 +93,14 @@ const config = {
               {
                 label: 'Introduction',
                 to: '/docs/introduction',
+              },
+              {
+                label: 'Models',
+                to: '/docs/models',
+              },
+              {
+                label: 'Entité Contribution',
+                to: '/docs/entite-contribution',
               },
               // {
               //   label: 'Modèle',

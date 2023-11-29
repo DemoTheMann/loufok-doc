@@ -2,36 +2,43 @@
 sidebar_position: 1
 ---
 
-# Introduction à l'application
+# Introduction
 
-**L'application Loufok** est une application web permettant la conception collaborative d'un récit à la manière d'un **[Cadavre Exquis](https://fr.wikipedia.org/wiki/Cadavre_exquis)**.
+**L'application Loufok** est une application web permettant la conception collaborative d'un court récit à la manière d'un **[cadavre exquis](https://fr.wikipedia.org/wiki/Cadavre_exquis)**.
 
 ## Côté utilisateur
 
-L'application permet à des utilisateurs de se connecter et de participer à la conception d'un récit sur une période donnée via une contribution unique qui comprennent entre 50 et 280 charactères.
+L'application permet aux utilisateurs de se connecter et de participer une fois à la conception d'un cadavre exquis via une contribution de 50 à 280 caractères.
 
-Si l'utilisateur se connecte à l'application durant une période de création de Cadavre Exquis, il lui est donné la possibilitée de contribuer une seule fois à ce dernier. La majeure partie du récit lui sera masqué à part une contribution précédente du récit qui est choisit aléatoirement, il peut donc baser sa contribution au récit sur cette unique bribe du résultat final.
+Si un cadavre exquis est en cours, l'utilisateur peut y participer. Il n'aura accès à aucune contribution excepté la sienne et une choisie aléatoirement. Afin de conserver le principe d'un cadavre exquis, la majeure partie du récit lui est masquée.
 
-L'utilisateur est aussi offert l'option de consulter dans sa totalitée le dernier Cadavre Exquis en date au quel il à participer.
+L'utilisateur est aussi offert l'option de consulter dans sa totalitée le dernier cadavre exquis en date au quel il à participer.
 
 ## Côté administrateur
 
 Les administrateurs de l'application sont à l'origine des projets d'écritures.
-Ils initient les Cadavre Exquis en définissant la période de création et le nombre de contributions max autorisées pour ce projet, et fournissent la première contribution du Cadavre Exquis pour diriger la direction du récit et les futures contributions des utilisateurs.
+Un administrateur est responsable de la création des cadavre exquis qui comporte :
+- titre du cadavre
+- date de début
+- date de fin
+- nombre de contributions maximum
+- première contribution
+Ils choississent la première contribution du cadavre pour diriger la direction du récit.
 
 ## Modèle MVC
 
-L'application s'organise autour d'un fonctionnement Model Vue Controller.
-Le modèle de MVC utilisé est celui fournit par Mr. Louet durant le semestre 5.
+L'application s'organise autour d'un fonctionnement **[Model Vue Controller](https://developer.mozilla.org/fr/docs/Glossary/MVC)**.
+Le modèle de MVC utilisé est celui fournit par M. Louet.
 
-Le stockage des informations des utilisateurs, amdinistrateurs et cadavres exquis ce font sur une base de donnée MySQL.
+Le stockage des données se font sur une base de donnée MySQL.
 
-## Entitées
+## Entités
 
-Les connexions à la base de données s'organises dans des fichiers dédiés només entités, ces derniers comportes toutes les fonctions de requêtes SQL préparées permetant toutes les opérations de bases.
-Ces fonctions proviennent du modèle d'organisation MVC fournit par Mr.Louet.
+Une entité représente souvent une table de base de données ou une classe PHP qui correspond à une table dans la base de données. Cette entité contient les méthodes nécessaires pour interagir avec les données de cette table.
 
 ## Modèles
 
-Les classes modèles de l'application permettent une communication entre l'interface front de l'application et les classes de communication à la base de données.
-La documentation et l'explication des différentes méthodes de ces classes sont discponibles sur cette documentation.
+
+Le modèle dans l'architecture MVC représente la logique métier et les données de l'application. Il gère l'accès, la modification et la manipulation des données, faisant l'intermédiaire entre la **vue** et le **contrôleur**. Le modèle assure ainsi la cohérence et l'intégrité des informations manipulées par l'application.
+
+Toutes les méthodes retrouvées dans les modèles sont détaillées dans cette documentation.

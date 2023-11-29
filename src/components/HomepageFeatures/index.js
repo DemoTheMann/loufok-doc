@@ -4,32 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Système de collaboration',
+    Svg: require('@site/static/img/collab.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Loufok est une application basée sur la collaboration pour créer une oeuvre. Votre coopération
+        permet la création de nouvelles histoires toutes plus loufoques les unes que les autres. 
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Récits surréalistes',
+    Svg: require('@site/static/img/surrealiste.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Laissez parler votre créativité avec les cadavre exquis revisités sur Loufok !
+        Apportez votre grain de folie aux histoires courtes de Loufok pour créer un récit surréaliste. 
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'L\'imagination au centre',
+    Svg: require('@site/static/img/imagine.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Votre imagination est au centre de l'application. C'est elle qui va faire vivre et rendre 
+        les récits attrayants et originaux, ne soyez pas timides, lâchez-vous !
       </>
     ),
   },
