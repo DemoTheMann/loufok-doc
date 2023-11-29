@@ -12,7 +12,7 @@ L'application permet aux utilisateurs de se connecter et de participer une fois 
 
 Si un cadavre exquis est en cours, l'utilisateur peut y participer. Il n'aura accès à aucune contribution excepté la sienne et une choisie aléatoirement. Afin de conserver le principe d'un cadavre exquis, la majeure partie du récit lui est masquée.
 
-L'utilisateur est aussi offert l'option de consulter dans sa totalitée le dernier cadavre exquis en date au quel il à participer.
+L'utilisateur peut aussi consulter dans sa totalitée le dernier cadavre exquis en date au quel il à participer.
 
 ## Côté administrateur
 
