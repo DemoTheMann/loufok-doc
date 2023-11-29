@@ -1,10 +1,10 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # API Loufok
 
-Une API Loufok est mise à disposition afin de récupérer les données liées aux Cadavres Exquis sous format JSON pour but d'être exploitées par d'autres applications.
+Une API Loufok est mise à disposition afin de récupérer les données liées aux cadavres exquis sous format JSON afin d'être exploitées par d'autres applications.
 
 
 ### getCadavres
@@ -13,11 +13,11 @@ Une API Loufok est mise à disposition afin de récupérer les données liées a
 
 Cette route d'API ne prend pas de paramètres.
 
-Elle renvoit en format _JSON_ un tableau associatif contenant touts les Cadavres Exquis présent sur la base de données.
+Elle renvoie en format _JSON_ un tableau associatif contenant tous les cadavres exquis présents sur la base de données.
 
-Chaque Cadavre Exquis est lui aussi présenté sous la forme d'un tableau associatif contenant toutes les informations liées à ce Cadavre, mais il contient aussi deux autres tableaux :
- - L'un comportant la liste des contributions de ce Cadavre, fournit dans l'ordre de soumissions.
- - L'autre comportant la liste des joueurs ayant participés à ce Cadavre.
+Chaque cadavre exquis est lui aussi présenté sous la forme d'un tableau associatif contenant toutes les informations liées à ce cadavre exquis, mais il contient aussi deux autres tableaux :
+ - L'un comportant la liste des contributions de ce cadavre exquis dans l'ordre de publication.
+ - L'autre comportant la liste des joueurs ayant participé à ce cadavre exquis.
 
 ```js title="APIController.php"
     public function getCadavres()
@@ -56,10 +56,10 @@ Chaque Cadavre Exquis est lui aussi présenté sous la forme d'un tableau associ
 
 `loufok/API/cadavres/{id}`
 
-Cette route d'API prend en paramètre un identifiant ( _int_ ) de Cadavre Exquis.
+Cette route d'API prend en paramètre un identifiant ( _int_ ) de cadavre exquis.
 
-Elle renvoit en format _JSON_ un tableau associatif contenant toutes les informations liées à ce Cadavre, mais il contient aussi deux autres tableaux :
- - L'un comportant la liste des contributions de ce Cadavre, fournit dans l'ordre de soumissions.
+Elle renvoie en format _JSON_ un tableau associatif contenant toutes les informations liées à ce cadavre exquis, mais il contient aussi deux autres tableaux :
+ - L'un comportant la liste des contributions de ce cadavre exquis dans l'ordre de publication.
  - L'autre comportant la liste des joueurs ayant participés à ce Cadavre.
 
 ```js title="APIController.php"
@@ -101,7 +101,7 @@ Elle renvoit en format _JSON_ un tableau associatif contenant toutes les informa
 
 Cette route d'API prend en paramètre un identifiant ( _int_ ) de Cadavre Exquis.
 
-Cette méthode ne renvoit rien, elle s'occupe seulement d'incrémenter le conteur de mentions `j'aime` dans le tuple d'un Cadavre Exquis donné, identifié par son id ( _int_ ).
+Cette méthode ne renvoie rien, elle s'occupe seulement d'incrémenter le conteur de mentions `j'aime` dans le tuple d'un Cadavre Exquis donné, identifié par son id ( _int_ ).
 
 ```js title="APIController.php"
     public function likeCadavreById($id)
