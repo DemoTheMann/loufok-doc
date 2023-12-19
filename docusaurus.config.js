@@ -97,16 +97,12 @@ const config = {
               },
               {
                 label: 'Models',
-                to: '/docs/models',
+                to: '/docs/category/model',
               },
               {
                 label: 'Entité Contribution',
                 to: '/docs/entite-contribution',
               },
-              // {
-              //   label: 'Modèle',
-              //   to: '/',
-              // },
             ],
           },
           // {
